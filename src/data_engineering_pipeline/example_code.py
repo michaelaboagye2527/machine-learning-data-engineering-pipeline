@@ -27,7 +27,7 @@ def load(numbers: list[int]) -> None:
 @flow(log_prints=True)
 def hello_pipeline(name: str = "world") -> list[int]:
     """Run extract, transform and load in order."""
-    print(f"Hello, {name}! Starting the pipeline.")
+    print(f"Vola, {name}! Starting the prefect pipeline.")
     numbers = extract()
     bigger = transform(numbers)
     load(bigger)
