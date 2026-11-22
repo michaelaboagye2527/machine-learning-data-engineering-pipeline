@@ -6,7 +6,7 @@ name: machine-learning-data-engineering-pipeline
 pull:
   - prefect.deployments.steps.git_clone:
       id: clone
-      repository:https://github.com/michaelaboagye2527/machine-learning-data-engineering-pipeline.git
+      repository: https://github.com/michaelaboagye2527/machine-learning-data-engineering-pipeline.git
       branch: main
   - prefect.deployments.steps.set_working_directory:
       directory: "{{ clone.directory }}/src"
